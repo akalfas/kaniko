@@ -56,6 +56,7 @@ const (
 
 	GCSBuildContextPrefix      = "gs://"
 	S3BuildContextPrefix       = "s3://"
+	AzureBuildContextPrefix    = "azure://"
 	LocalDirBuildContextPrefix = "dir://"
 
 	HOME = "HOME"

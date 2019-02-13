@@ -18,6 +18,14 @@
   version = "v0.25.0"
 
 [[projects]]
+  digest = "1:d2ccb697dc13c8fbffafa37baae97594d5592ae8f7e113471084137315536e2b"
+  name = "github.com/Azure/azure-pipeline-go"
+  packages = ["pipeline"]
+  pruneopts = "NUT"
+  revision = "b8e3409182fd52e74f7d7bdfbff5833591b3b655"
+  version = "v0.1.8"
+
+[[projects]]
   digest = "1:f56288257633effcb1743f6fa77d12dd3eaeeb5c78b3de6e199eb1b4780f57f5"
   name = "github.com/Azure/azure-sdk-for-go"
   packages = [
@@ -27,6 +35,14 @@
   pruneopts = "NUT"
   revision = "4e8cbbfb1aeab140cd0fa97fd16b64ee18c3ca6a"
   version = "v19.1.0"
+
+[[projects]]
+  digest = "1:0376b54cf965bdae03b9c2a2734cad87fc3bbaa4066c0374ec86f10f77f03d45"
+  name = "github.com/Azure/azure-storage-file-go"
+  packages = ["azfile"]
+  pruneopts = "NUT"
+  revision = "d93e19c84c2af7958331fb3ec8fd04eb0d76a25e"
+  version = "0.4.1"
 
 [[projects]]
   branch = "master"
@@ -1177,6 +1193,7 @@
   analyzer-version = 1
   input-imports = [
     "cloud.google.com/go/storage",
+    "github.com/Azure/azure-storage-file-go/azfile",
     "github.com/aws/aws-sdk-go/aws",
     "github.com/aws/aws-sdk-go/aws/session",
     "github.com/aws/aws-sdk-go/service/s3",

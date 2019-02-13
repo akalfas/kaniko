@@ -40,6 +40,8 @@ func GetBuildContext(srcContext string) (BuildContext, error) {
 		return &GCS{context: context}, nil
 	case constants.S3BuildContextPrefix:
 		return &S3{context: context}, nil
+	case constants.AzureBuildContextPrefix:
+		return &Azure{context: context}, nil
 	case constants.LocalDirBuildContextPrefix:
 		return &Dir{context: context}, nil
 	}
